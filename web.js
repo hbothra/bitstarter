@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var app = express();
-var fileBuffer = fs.readFileSync('hw3.txt');
+var fileBuffer = fs.readFileSync('index.html');
 app.use(express.logger());
 
 app.get('/', function(request, response) {
